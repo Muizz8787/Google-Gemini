@@ -1,0 +1,86 @@
+/* Apply the overall styling to make the page beautiful */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+    min-height: 100vh; /* Ensures the height covers the entire screen */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+/* Container for centering and styling */
+.container {
+    background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent background */
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    padding: 20px 30px;
+    max-width: 600px;
+    width: 90%; /* For responsiveness */
+}
+
+/* Header style */
+h1 {
+    font-size: 2.5rem;
+    color: #4b4b4b;
+    margin-bottom: 20px;
+}
+
+/* Paragraphs style */
+p {
+    font-size: 1.2rem;
+    color: #666;
+    margin: 10px 0;
+}
+
+/* Style for the output box */
+.output-box {
+    background-color: #f9f9f9;
+    border: 2px dashed #ccc;
+    padding: 15px;
+    margin: 20px 0;
+    border-radius: 8px;
+    font-size: 1rem;
+    color: #333;
+}
+
+/* Back to Search link */
+a {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: white;
+    background: linear-gradient(90deg, #6a11cb, #2575fc);
+    border-radius: 25px;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: all 0.3s ease-in-out;
+}
+
+a:hover {
+    background: linear-gradient(90deg, #2575fc, #6a11cb);
+    transform: scale(1.05);
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    p {
+        font-size: 1rem;
+    }
+
+    .output-box {
+        font-size: 0.9rem;
+    }
+
+    a {
+        font-size: 0.9rem;
+        padding: 8px 15px;
+    }
+}

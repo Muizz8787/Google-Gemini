@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Results</title>
+    
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(120deg, #a18cd1, #fbc2eb); /* Soft and beautiful gradient */
+            color: #333;
+        }
+
+        h1 {
+            text-align: center;
+            color: #ffffff;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+            margin-top: 30px;
+        }
+
+        .box {
+            margin: 30px auto;
+            padding: 20px;
+            max-width: 1100px;
+            background: rgba(255, 255, 255, 0.85); /* Semi-transparent box effect */
+            border-radius: 12px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+            text-align: center;
+        }
+
+        .box p {
+            font-size: 22px;
+            line-height: 1.8;
+            color: #555;
+            margin: 10px 0;
+        }
+
+        a {
+            display: inline-block;
+            margin-top: 20px;
+            margin-left: 45%;
+            margin-bottom: 5%;
+            padding: 10px 20px;
+            text-decoration: none;
+            background-color: #6a11cb;
+            color: #ffffff;
+            border-radius: 25px;
+            font-weight: bold;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            transition: all 0.3s ease-in-out;
+        }
+
+        a:hover {
+            background-color: #2575fc;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+        }
+
+        @media (max-width: 768px) {
+            body {
+                font-size: 16px;
+            }
+
+            .box {
+                padding: 15px;
+            }
+            a{
+              margin-left: 35%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1 style="color: black;"><strong>Query:</strong> <%= query %></h1>
+
+    <div class="box">
+        <p><%= output %></p>
+    </div>
+
+    <a href="http://localhost:3000/home">Go To Search</a>
+</body>
+</html>

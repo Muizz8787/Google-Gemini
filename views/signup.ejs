@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <title> Signup </title>
+    <link rel="stylesheet" href="css/signup.css">
+    <!-- Fontawesome CDN Link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   </head>
+<body style="background-color: black;">
+    
+  <div class="container">
+    <input type="checkbox" id="flip">
+    <div class="cover">
+      <div class="front">
+        <img src="images/m.jpg" alt="">
+        <div class="text">
+            <span class="text-1"><br> </span>
+            <span class="text-2"></span>
+        </div>
+      </div>
+      <div class="back">
+        <img class="backImg" src="images/m.jpg" alt="">
+        <div class="text">
+          <span class="text-1"><br> </span>
+          <span class="text-2"></span>
+        </div>
+      </div>
+    </div>
+    <div class="forms">
+        <div class="form-content">
+          <div class="login-form">
+            <div class="title">Login</div>
+          <form action="/login" method="post">
+            <div class="input-boxes">
+              <div class="input-box">
+                <i class="fas fa-envelope" id="emailicon"></i>
+                <input type="text" placeholder="Enter your email" name="email" required>
+              </div>
+              <div class="input-box">
+                <i class="fas fa-lock" id="passicon"></i>
+                <input type="password" placeholder="Enter your password" name="password" required>
+              </div>
+              <div class="text"><a href="#">Forgot password?</a></div>
+              <div class="button input-box">
+                <input type="submit" value="Sumbit">
+              </div>
+              <div class="text sign-up-text">Don't have an account? <label for="flip" id="sign">Sigup </label></div>
+            </div>
+        </form>
+      </div>
+        <div class="signup-form">
+          <div class="title">Signup</div>
+        <form action="/signup" method="post">
+            <div class="input-boxes">
+              <div class="input-box">
+                <i class="fas fa-user" id="nameicon"></i>
+                <input type="text" placeholder="Enter your name" name="username" required>
+              </div>
+              <div class="input-box">
+                <i class="fas fa-envelope"id="emailicon"></i>
+                <input type="text" placeholder="Enter your email" name="email" required>
+              </div>
+              <div class="input-box">
+                <i class="fas fa-lock"id="passicon"></i>
+                <input type="password" placeholder="Enter your password" name="password" required>
+              </div>
+              <div class="button input-box">
+                <input type="submit" value="Sumbit" onclick="fun()">
+              </div>
+              <div class="text sign-up-text">Already have an account? <label for="flip" id="sign">Login </label></div>
+            </div>
+      </form>
+    </div>
+    </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
